@@ -1,1 +1,72 @@
+# Build
+/build/
+/out/
+/target/
+/bin/
+
+# Gradle
+/**/build/
+!gradle-wrapper.jar
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Arquivos de log
+*.log
+
+# Arquivos de sistema
 .DS_Store
+Thumbs.db
+
+# IDEs
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Arquivos de sistema operacionais
+*.swp
+*.swo
+*~
+*.tmp
+
+# Arquivos de testes
+test-output/
+test-results/
+coverage/
+
+# Arquivos de execução
+*.jar
+*.war
+*.ear
+
+# Configurações de ambiente
+.env
+*.env
+.env.*
+
+# Arquivos gerados por ferramentas de análise
+/reports/
+/jacoco.exec
+
+# Arquivos temporários de execução
+*.pid
+
+# Docker (se usar)
+**/.docker
+*.dockerignore
+
+# SonarQube
+.sonar/
+
+# Arquivos de cache
+*.class
+*.cache
