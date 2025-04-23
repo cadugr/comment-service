@@ -26,6 +26,7 @@ public class CommentController {
     private final CommentRepository commentRepository;
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public CommentOutput createComment(@RequestBody CommentInput commentInput) {
         log.info("Receiving new comment {}.", commentInput.toString());
         Comment comment = commentService.save(commentInput);
